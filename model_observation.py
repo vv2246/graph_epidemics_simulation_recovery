@@ -326,6 +326,8 @@ if __name__ =="__main__":
     ax.legend(loc=1,ncol=1,shadow=True)
     plt.tight_layout()
     # seed = int(time.time())
+    if os.path.isdir("results") == False:
+        os.mkdir("results")
     name = "name_of_directory"
     os.mkdir(f"./results/simu_{name}")
     plt.savefig(f"./results/simu_{seed}/SEIR_measurement_reconstruction.pdf")
