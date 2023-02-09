@@ -11,14 +11,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import graph_tool.all as gt
 from spKMC import *
-from spKMC_unitTests import *
 from spKMC_sampling import *
 import os
-# import time
 import json
 plt.rcParams.update({'font.size': 25})
-
-
 
 f=lambda a: int((abs(a)+a)/2)   
 
